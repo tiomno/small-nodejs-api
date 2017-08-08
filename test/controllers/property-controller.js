@@ -2,7 +2,7 @@ const chai = require( 'chai' )
 const expect = chai.expect
 const rewire = require( 'rewire' )
 
-const propertyController = rewire( '../../controllers/propertyController' )
+const propertyController = rewire( '../../controllers/property-controller' )
 const filter = propertyController.filter
 const filterPromise = propertyController.__get__( 'filterPromise' )
 const concatAddress = propertyController.__get__( 'concatAddress' )

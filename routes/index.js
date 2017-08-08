@@ -1,6 +1,6 @@
 const router = require( 'express' ).Router()
-const propertyController = require( '../controllers/propertyController' )
-const { catchErrors } = require( '../handlers/errorHandlers' )
+const propertyController = require( '../controllers/property-controller' )
+const { catchErrors } = require( '../handlers/error-handlers' )
 
 router.post( '/', catchErrors( propertyController.filter ) )
 

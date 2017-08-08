@@ -1,7 +1,7 @@
 const chai = require( 'chai' )
 const expect = chai.expect
 
-const { catchErrors, notFound, badRequest, developmentErrors, productionErrors } = require( '../../handlers/errorHandlers' )
+const { catchErrors, notFound, badRequest, developmentErrors, productionErrors } = require( '../../handlers/error-handlers' )
 
 describe( 'error handler catchErrors', () => {
 
